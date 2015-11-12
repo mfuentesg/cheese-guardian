@@ -22,5 +22,5 @@ gulp.task('sass', function() {
 });
 
 gulp.task('default', ['sass'], function() {
-  gulp.watch(path.join(__dirname, 'assets', 'sass', '**.scss') , ['sass']);
+  gulp.watch(path.join(__dirname, 'assets', 'sass', '**', '**.scss') , ['sass']);
 });
