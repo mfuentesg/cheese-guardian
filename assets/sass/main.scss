@@ -1,0 +1,107 @@
+@import "vendor/vendor";
+@import "base/base";
+
+$base-image-size: 330px;
+$base-image-size-minified: 160px;
+
+body {
+  font-family: 'Droid Sans', sans-serif;
+  background-color: $orange;
+}
+
+.header {
+  border-top: 10px solid $orange;
+  padding: 50px 0;
+  background-color: $white;
+
+  .header-column {
+    line-height: $base-image-size;
+    min-height: $base-image-size;
+    position: relative;
+    
+    .header-image {
+      display: inline-block;
+      max-height: $base-image-size;
+    }
+
+    &:first-child .header-image {
+      padding: 20px;
+    }
+  }
+
+  .header-divider {
+    height: 200px;
+    background: linear-gradient($white, $orange, $orange, $orange, $white);
+    margin-top: 75px;
+    width: 3px;
+  }
+}
+
+.middle-content {
+  @extend .zigzag-border;
+  background-color: $light-grey;
+  min-height: 300px;
+  padding-top: 50px;
+
+
+  .middle-content-column {
+    margin-bottom: 30px;
+    
+    .middle-content-image {
+      margin-bottom: 10px;
+      &:hover {
+        animation: shake 100ms linear;
+      }
+    }
+
+    .middle-content-column-title {
+      font-weight: bold;
+      color: $dark-grey;
+    }
+
+    .middle-content-column-description {
+      font-weight: bold;
+      color: $grey;
+    }
+  }
+}
+
+.footer {
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  .subscribe-form {
+    @extend .form;
+    
+    .subscribe-form-title {
+      color: $white;
+    }
+  }
+}
+
+/**
+ * Media queries
+ */
+@media all and (max-width: 480px) {
+  .header-column {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .header {
+   .header-image {
+      max-height: $base-image-size-minified;
+      padding: 0px;
+    }
+
+    .header-column {
+      line-height: $base-image-size-minified;
+      min-height: $base-image-size-minified;
+    }
+
+    .header-divider {
+      display: none;
+    }
+  }
+}

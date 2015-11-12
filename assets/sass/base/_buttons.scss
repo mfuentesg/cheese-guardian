@@ -1,0 +1,12 @@
+.btn.btn-bordered {
+  background-color: transparent;
+  border: 1px solid $white;
+  color: $white;
+  font-size: 20px;
+  padding: 6px 15px;
+  transition: background-color 150ms ease-in-out;
+
+  &:hover {
+    background-color: $orange-opaque;
+  }
+}

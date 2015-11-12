@@ -1,0 +1,12 @@
+.zigzag-border {
+  position: relative;
+
+  &:before {
+    background-image: url(../img/triangle.png);
+    background-size: 15px 15px;
+    height: 15px;
+    position: absolute;
+    top: -15px;
+    width: 100%;
+  }
+}
