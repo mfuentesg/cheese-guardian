@@ -24,3 +24,7 @@ This executes concurrently the previous commands.
 ```
 $ npm start
 ```
+
+**Expected Design**
+
+<img src = "https://raw.githubusercontent.com/mfuentesg/cheese-guardian/master/public/img/tcg_basic_landing.png" alt = "Expected Design" height = "350">
