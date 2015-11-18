@@ -28,3 +28,7 @@ $ npm start
 **Expected Design**
 
 <img src = "https://raw.githubusercontent.com/mfuentesg/cheese-guardian/master/public/img/tcg_basic_landing.png" alt = "Expected Design" height = "350">
+
+**Achieved Design**
+
+<img src = "https://raw.githubusercontent.com/mfuentesg/cheese-guardian/master/public/img/achieved-design.png" alt = "Achieved Design" height = "350">
